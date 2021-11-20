@@ -1,0 +1,50 @@
+{
+  "Controller": {
+    "prefix": "controller",
+    "body": [
+      "/* What this Controller does... */",
+      "import { Request, Response } from 'express'",
+
+      "class className {async handle(req: Request, res: Response) {",
+      "try { const service = 'new Service()';",
+      "const result = 'service.execute()';res.status(200).json({ result: result })} ",
+      "",
+      "catch (error) {res.status(401).json({ error: error })} }};export { className }"
+    ],
+    "description": "import a controller class"
+  },
+  "Service": {
+    "prefix": "service",
+    "body": [
+      "/* What this Service does... */",
+      "",
+      "class className {async execute() {const data = 'data';return data;}};",
+      "",
+      "export { className };"
+    ],
+    "description": "import a service class"
+  },
+  "AppNodeJS": {
+    "prefix": "app",
+    "body": [
+      "import express from 'express'",
+      "import cors from 'cors'",
+      "import { createServer } from 'http';import{ route }from'../Router/router';",
+      "import 'dotenv/config';const app = express();",
+      "app.use(express.json());app.use(cors);app.use(route);const serverHttp = createServer(app);export { serverHttp };"
+    ],
+    "description": "App nodeJS"
+  },
+
+  "ServerNodeJS": {
+    "prefix": "server",
+    "body": [
+      "import { serverHttp } from './app/app'",
+      "",
+      "const { SERVER_PORT } = process.env",
+      "",
+      "serverHttp.listen(SERVER_PORT, (): void => {console.log(`Listenning the port ${SERVER_PORT}`)})"
+    ],
+    "description": "App nodeJS"
+  }
+}
