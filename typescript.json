@@ -6,8 +6,8 @@
       "import { Request, Response } from 'express'",
 
       "class className {async handle(req: Request, res: Response) {",
-      "try { const service = 'new Service()';",
-      "const result = 'service.execute()';res.status(200).json({ result: result })} ",
+      "try { const service = 'new Service();'",
+      "const result = await 'service.execute()';res.status(200).json({ result: result })} ",
       "",
       "catch (error) {res.status(401).json({ error: error })} }};export { className }"
     ],
@@ -18,7 +18,7 @@
     "body": [
       "/* What this Service does... */",
       "",
-      "class className {async execute() {const data = 'data';return data;}};",
+      "class className {async execute() {const data = 'await data';return data;}};",
       "",
       "export { className };"
     ],
@@ -29,9 +29,24 @@
     "body": [
       "import express from 'express'",
       "import cors from 'cors'",
-      "import { createServer } from 'http';import{ route }from'../Router/router';",
-      "import 'dotenv/config';const app = express();",
-      "app.use(express.json());app.use(cors);app.use(route);const serverHttp = createServer(app);export { serverHttp };"
+      "import http from 'http'",
+      "import { router } from '../Router/router'",
+      "import 'dotenv/config'",
+      "// Start the app",
+      "const app = express()",
+
+      "//Connections",
+      "app.use(cors())",
+
+      "app.use(express.json())",
+      "app.use(router)",
+      "//just for test",
+      "app.get('/', (req, res) => {return res.send('working')})",
+
+      "/*Server with http method*/",
+      "const serverHttp = http.createServer(app)",
+
+      "export { serverHttp }"
     ],
     "description": "App nodeJS"
   },
@@ -41,9 +56,9 @@
     "body": [
       "import { serverHttp } from './app/app'",
       "",
-      "const { SERVER_PORT } = process.env",
+      "const port = process.env.SERVER_PORT || 3000",
       "",
-      "serverHttp.listen(SERVER_PORT, (): void => {console.log(`Listenning the port ${SERVER_PORT}`)})"
+      "serverHttp.listen(port, (): void => {console.log(`Running on port: ${port}`)})"
     ],
     "description": "App nodeJS"
   }
