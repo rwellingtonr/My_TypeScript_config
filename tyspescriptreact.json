@@ -1,0 +1,33 @@
+{
+	"Function Component": {
+		"prefix": "rfc",
+		"body": [
+			"",
+			"type ${1:Component}Props={}",
+			"",
+			"export function ${1:Component}(props:${1:Component}Props){",
+			"return <></>",
+			"}"
+		],
+		"description": "Export a React function compoenent"
+	},
+	"Import styles": {
+		"prefix": "stl",
+		"body": [
+			"import * as S from './styles'",
+		],
+		"description": "import styles from style file"
+	},
+	"Named Function Component": { 
+		"prefix": "nrfc",
+		"body": [
+			"",
+			"type ${TM_FILENAME_BASE:Component}Props={}",
+			"",
+			"export function ${TM_FILENAME_BASE:Component}(props:${TM_FILENAME_BASE:Component}Props){",
+			"return <></>",
+			"}"
+		],
+		"description": "Export a named React function compoenent"
+	}
+}
