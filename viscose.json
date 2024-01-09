@@ -1,0 +1,204 @@
+{
+  "tabnine.experimentalAutoImports": true,
+  "editor.lineHeight": 26,
+  "workbench.tree.indent": 8,
+  "debug.console.fontSize": 14,
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.cursorStyle": "line",
+  "editor.autoClosingBrackets": "always",
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.enabledLanguageIds": [
+    "csharp",
+    "go",
+    "javascript",
+    "javascriptreact",
+    "markdown",
+    "html",
+    "css",
+    "php",
+    "plaintext",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
+  "cSpell.enabled": true,
+  "cSpell.ignorePaths": [
+    "node_modules", // this will ignore anything the node_modules directory
+    "**/node_modules", // the same for this one
+    "**/node_modules/**", // the same for this one
+    "node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+    "vscode-extension", //
+    ".git", // Ignore the .git directory
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll" // Ignore all .dll files
+  ],
+  "cSpell.userWords": [
+    "atualizacao",
+    "bootcamp",
+    "bullmq",
+    "chakra",
+    "checkin",
+    "checkins",
+    "clsx",
+    "cnpj",
+    "Codegen",
+    "cpqd",
+    "CPQD",
+    "datadog",
+    "Datetime",
+    "dayjs",
+    "descricao",
+    "Dotenv",
+    "esbuild",
+    "expireat",
+    "fastify",
+    "Fastify",
+    "hagens",
+    "hookform",
+    "jamjuree",
+    "jupiter",
+    "Leardini",
+    "liveblocks",
+    "LIVEBLOCKS",
+    "middlewares",
+    "mixpanel",
+    "monaco",
+    "nestjs",
+    "postgres",
+    "postgresql",
+    "prefetch",
+    "previsao",
+    "producao",
+    "Producao",
+    "razao",
+    "reactflow",
+    "responsavel",
+    "roboto",
+    "rocketseat",
+    "rotion",
+    "rsxp",
+    "Sandpack",
+    "shiki",
+    "situacao",
+    "skylab",
+    "solicitacao",
+    "sqlite",
+    "supergraph",
+    "svgr",
+    "sympla",
+    "tailwindcss",
+    "textblock",
+    "tiptap",
+    "trpc",
+    "TRPC",
+    "tsup",
+    "unfollow",
+    "Unfollow",
+    "unform",
+    "Unform",
+    "unmark",
+    "upsert"
+  ],
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescriptreact": "typescriptreact",
+    "mardkown": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "tv\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ]
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "symbols.folders.associations": {
+    "hooks": "folder-purple-code",
+    "errors": "folder-red",
+    "error": "folder-red",
+    "http": "folder-red-outline",
+    "common": "folder-purple",
+    "screens": "folder-orange-code",
+    "pages": "folder-orange-code",
+    "routes": "folder-green-outline",
+    "repository": "folder-blue-outline",
+    "entity": "folder-orange-outline",
+    "entities": "folder-orange-outline",
+    "data": "folder-yellow",
+    "mock": "folder-yellow",
+    "services": "folder-yellow-outline",
+    "domain": "folder-yellow",
+    "controller": "folder-gray-outline",
+    "interface": "folder-blue",
+    "lib": "folder-green-outline"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "graphql",
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.service.ts": "nest",
+    "*.controller.ts": "nest",
+    "*.provider.ts": "nest",
+    "*.repository.ts": "nest"
+  },
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "yaml.format.printWidth": 100,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.fontSize": 14,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "window.commandCenter": true,
+  "todo-tree.general.showActivityBarBadge": true,
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "custom",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "symbols",
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "tag-create:command"
+  ],
+  "editor.fontSize": 16
+}
