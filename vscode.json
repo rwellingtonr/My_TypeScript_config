@@ -142,7 +142,13 @@
     "domain": "folder-yellow",
     "controller": "folder-gray-outline",
     "interface": "folder-blue",
-    "lib": "folder-green-outline"
+    "lib": "folder-green-outline",
+    "test": "folder-green-code",
+    "store": "folder-yellow",
+    "mocks": "folder-yellow",
+    "contract": "folder-blue",
+    "contracts": "folder-blue",
+    "infra": "folder-red"
   },
   "eslint.validate": [
     "javascript",
