@@ -7,6 +7,10 @@
   "terminal.integrated.cursorStyle": "line",
   "editor.autoClosingBrackets": "always",
   "cSpell.language": "en,pt,pt_BR",
+  "workbench.editor.labelFormat": "short",
+  "workbench.statusBar.visible": false,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
   "cSpell.enabledLanguageIds": [
     "csharp",
     "go",
